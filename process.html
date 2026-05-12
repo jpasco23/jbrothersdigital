@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Process — J Brothers Digital</title>
+  <link rel="icon" type="image/png" href="brand_assets/JB Favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:        #123A57;
+      --navy-light:  #1a4f75;
+      --navy-dark:   #0c2a40;
+      --teal:        #1BAF92;
+      --teal-light:  #22d4b0;
+      --teal-dark:   #158a73;
+      --light:       #F0F0F0;
+      --dark:        #0a1520;
+      --dark-800:    #111d2b;
+      --dark-700:    #1a2d3d;
+      --dark-600:    #223548;
+      --white:       #ffffff;
+      --gray:        #333333;
+      --text-primary:   #0f2233;
+      --text-secondary: #4a6070;
+      --text-muted:     #7a9ab0;
+      --text-on-dark:   #e8f4f8;
+      --text-on-dark-muted: #7a9ab0;
+      --font-display: 'Poppins', sans-serif;
+      --font-body:    'Open Sans', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 10px 10px -5px rgba(0,0,0,.04);
+      --transition: .3s cubic-bezier(.4,0,.2,1);
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 256px 256px;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .35;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 28px; border-radius: var(--radius-full);
+      font-family: var(--font-display); font-weight: 600; font-size: 15px;
+      cursor: pointer; transition: var(--transition); border: none; outline: none;
+    }
+    .btn-primary { background: var(--teal); color: var(--white); }
+    .btn-primary:hover { background: var(--teal-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(27,175,146,.35); }
+    .btn-dark { background: var(--navy); color: var(--white); }
+    .btn-dark:hover { background: var(--navy-light); transform: translateY(-2px); }
+
+    /* ── NAVIGATION ── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 0; background: transparent;
+      border-bottom: 1px solid transparent;
+      transition: background .35s cubic-bezier(.4,0,.2,1), border-color .35s cubic-bezier(.4,0,.2,1), box-shadow .35s cubic-bezier(.4,0,.2,1);
+    }
+    .nav.scrolled { background: var(--white); border-bottom-color: #e8eff4; box-shadow: 0 2px 20px rgba(0,0,0,.08); }
+    .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo .logo-transparent { display: block; height: 42px; width: auto; }
+    .nav-logo .logo-solid       { display: none;  height: 42px; width: auto; }
+    .nav.scrolled .logo-transparent { display: none; }
+    .nav.scrolled .logo-solid       { display: block; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: rgba(255,255,255,.85); transition: color var(--transition); }
+    .nav-links a:hover { color: var(--teal); }
+    .nav.scrolled .nav-links a { color: var(--text-primary); }
+    .nav.scrolled .nav-links a:hover { color: var(--teal); }
+    .nav-links a.active { color: var(--teal); }
+    .nav-cta { display: flex; align-items: center; gap: 16px; }
+    .nav-cta .btn { padding: 10px 22px; font-size: 14px; }
+    .nav-cta .btn-nav { background: var(--teal); color: var(--white); border: 2px solid var(--teal); }
+    .nav-cta .btn-nav:hover { background: var(--teal-light); border-color: var(--teal-light); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(27,175,146,.35); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; border-radius: 2px; transition: var(--transition); background: var(--white); }
+    .nav.scrolled .hamburger span { background: var(--navy); }
+    .nav-item { position: relative; }
+    .nav-item > a { display: flex; align-items: center; gap: 5px; }
+    .nav-item > a .chevron { width: 14px; height: 14px; transition: transform var(--transition); flex-shrink: 0; }
+    .nav-item:hover > a .chevron { transform: rotate(180deg); }
+    .dropdown {
+      position: absolute; top: calc(100% + 12px); left: 50%;
+      transform: translateX(-50%); min-width: 240px;
+      background: var(--white); border: 1px solid #e2e8f0;
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);
+      padding: 8px; opacity: 0; visibility: hidden;
+      transform: translateX(-50%) translateY(-8px);
+      transition: opacity .22s ease, transform .22s ease, visibility .22s; z-index: 200;
+    }
+    .nav-item:hover .dropdown { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .dropdown::before {
+      content: ''; position: absolute; top: -6px; left: 50%;
+      width: 12px; height: 12px; background: var(--white);
+      border-left: 1px solid #e2e8f0; border-top: 1px solid #e2e8f0;
+      transform: translateX(-50%) rotate(45deg);
+    }
+    .dropdown a { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; color: var(--text-primary) !important; opacity: 1 !important; transition: background var(--transition), color var(--transition); white-space: nowrap; }
+    .dropdown a:hover { background: rgba(18,58,87,.06); color: var(--navy) !important; }
+    .dropdown a .dd-icon { width: 30px; height: 30px; border-radius: 6px; background: linear-gradient(135deg, rgba(18,58,87,.08), rgba(27,175,146,.08)); display: flex; align-items: center; justify-content: center; color: var(--teal); flex-shrink: 0; }
+
+    /* ── SECTION LABELS ── */
+    .section-eyebrow { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; }
+    .section-title { font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 42px); font-weight: 800; color: var(--text-primary); line-height: 1.2; margin-bottom: 18px; }
+    .section-title .accent { background: linear-gradient(90deg, var(--teal) 0%, var(--teal-light) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .section-desc { font-size: 17px; color: var(--text-secondary); line-height: 1.75; max-width: 640px; }
+
+    /* ── PAGE HERO ── */
+    .page-hero { position: relative; background: var(--dark); padding: 160px 0 100px; overflow: hidden; text-align: center; }
+    .page-hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 55% at 50% 60%, rgba(27,175,146,.12) 0%, transparent 65%),
+                  radial-gradient(ellipse 50% 70% at 0% 100%, rgba(18,58,87,.55) 0%, transparent 60%),
+                  linear-gradient(150deg, #071828 0%, #0d2337 45%, #123A57 100%);
+    }
+    .page-hero-glow { position: absolute; width: 700px; height: 700px; border-radius: 50%; background: radial-gradient(circle, rgba(27,175,146,.10) 0%, rgba(18,58,87,.08) 40%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; }
+    .page-hero-glow-top { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(18,120,200,.18) 0%, rgba(27,175,146,.08) 45%, transparent 70%); top: -120px; left: -80px; pointer-events: none; }
+    .page-hero-pattern { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: .75; pointer-events: none; }
+    .page-hero-content { position: relative; z-index: 2; }
+    .page-hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(27,175,146,.12); border: 1px solid rgba(27,175,146,.3); border-radius: var(--radius-full); color: var(--teal); font-size: 13px; font-weight: 600; letter-spacing: .5px; margin-bottom: 28px; }
+    .badge-dot { position: relative; width: 6px; height: 6px; flex-shrink: 0; }
+    .badge-dot::before { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--teal); }
+    .badge-dot::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--teal); animation: badge-ping 1.8s ease-out infinite; }
+    @keyframes badge-ping { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(3); opacity: 0; } }
+    .page-hero h1 { font-family: var(--font-display); font-size: clamp(34px, 5vw, 58px); font-weight: 800; line-height: 1.12; color: var(--white); margin-bottom: 20px; }
+    .page-hero h1 .accent { display: block; background: linear-gradient(90deg, #1BAF92 0%, #22d4b0 60%, #1BAF92 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .page-hero-desc { font-size: clamp(16px, 1.8vw, 18px); color: var(--text-on-dark-muted); max-width: 560px; margin: 0 auto; line-height: 1.75; }
+
+    /* ── PROCESS OVERVIEW ── */
+    .process-overview {
+      padding: 80px 0 40px;
+      background: var(--white);
+    }
+    .process-overview-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .process-overview-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    .process-overview-text p {
+      font-size: 16.5px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .process-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 32px;
+    }
+    .process-pillar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      background: #f7fafc;
+      border: 1px solid #e8eff4;
+      border-radius: var(--radius-md);
+    }
+    .process-pillar-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
+    }
+    .process-pillar span {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .process-visual-card {
+      background: var(--dark-800);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius-xl);
+      padding: 36px;
+      box-shadow: var(--shadow-xl);
+    }
+    .process-visual-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-on-dark-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+    .process-visual-steps { display: flex; flex-direction: column; gap: 16px; }
+    .pv-step {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+    .pv-step:hover { background: rgba(27,175,146,.07); border-color: rgba(27,175,146,.2); }
+    .pv-step-num {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--teal-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+    .pv-step-label {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-on-dark);
+      flex: 1;
+    }
+    .pv-step-check {
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      background: rgba(27,175,146,.15);
+      border: 1px solid rgba(27,175,146,.3);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal);
+      font-size: 10px;
+    }
+
+    /* ── DETAILED STEPS ── */
+    .steps-section {
+      padding: 60px 0 100px;
+      background: #f4f8fb;
+      position: relative;
+    }
+    .steps-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(27,175,146,.3), transparent);
+    }
+    .steps-header {
+      text-align: center;
+      margin-bottom: 72px;
+    }
+    .steps-header .section-desc { margin: 0 auto; }
+    .steps-list { display: flex; flex-direction: column; gap: 32px; }
+    .step-card {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 32px;
+      align-items: start;
+      background: var(--white);
+      border: 1px solid #e2eaf0;
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      box-shadow: 0 2px 16px rgba(18,58,87,.06);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .step-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: linear-gradient(180deg, var(--teal-dark), var(--teal-light));
+      border-radius: 4px 0 0 4px;
+      opacity: 0;
+      transition: var(--transition);
+    }
+    .step-card:hover { border-color: rgba(27,175,146,.25); box-shadow: 0 12px 40px rgba(18,58,87,.1); transform: translateY(-3px); }
+    .step-card:hover::before { opacity: 1; }
+    .step-card-num {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy), var(--teal-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--white);
+      box-shadow: 0 4px 20px rgba(27,175,146,.3);
+      flex-shrink: 0;
+      position: relative;
+    }
+    .step-card-num::after {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      border: 2px solid rgba(27,175,146,.2);
+    }
+    .step-card-body {}
+    .step-card-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .step-card-body h3 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .step-card-body p {
+      font-size: 15.5px;
+      color: var(--text-secondary);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .step-deliverables {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .step-deliverable {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(27,175,146,.07);
+      border: 1px solid rgba(27,175,146,.18);
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--teal-dark);
+    }
+    .step-deliverable svg { flex-shrink: 0; }
+
+    /* ── CTA ── */
+    .cta {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--dark-700) 100%);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .cta::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(27,175,146,.15) 0%, transparent 65%);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .cta-inner { position: relative; z-index: 1; }
+    .cta h2 { font-family: var(--font-display); font-size: clamp(28px, 4vw, 44px); font-weight: 800; color: var(--white); line-height: 1.2; margin-bottom: 16px; }
+    .cta p { font-size: 17px; color: var(--text-on-dark-muted); margin-bottom: 36px; max-width: 520px; margin-left: auto; margin-right: auto; }
+    .cta-btn-wrap { display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .cta-trust { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+    .cta-trust-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(255,255,255,.55); }
+    .cta-trust-item svg { color: var(--teal); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--dark); padding: 72px 0 0; border-top: 1px solid rgba(255,255,255,.06); }
+    .footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 56px; border-bottom: 1px solid rgba(255,255,255,.07); }
+    .footer-brand img { height: 38px; width: auto; margin-bottom: 20px; filter: brightness(0) invert(1); }
+    .footer-brand p { font-size: 14px; color: var(--text-on-dark-muted); line-height: 1.7; max-width: 280px; margin-bottom: 24px; }
+    .footer-social { display: flex; gap: 10px; }
+    .social-link { width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); display: flex; align-items: center; justify-content: center; font-size: 13px; color: var(--text-on-dark-muted); transition: var(--transition); }
+    .social-link:hover { background: rgba(27,175,146,.15); border-color: rgba(27,175,146,.4); color: var(--teal); }
+    .footer-col h4 { font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px; }
+    .footer-col li { margin-bottom: 10px; }
+    .footer-col a { font-size: 14px; color: var(--text-on-dark-muted); transition: color var(--transition); }
+    .footer-col a:hover { color: var(--teal); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; }
+    .footer-bottom p { font-size: 13px; color: var(--text-on-dark-muted); }
+    .footer-bottom-links { display: flex; gap: 24px; }
+    .footer-bottom-links a { font-size: 13px; color: var(--text-on-dark-muted); transition: color var(--transition); }
+    .footer-bottom-links a:hover { color: var(--teal); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .process-overview-inner { grid-template-columns: 1fr; gap: 48px; }
+      .step-card { grid-template-columns: 1fr; }
+      .step-card-num { width: 64px; height: 64px; font-size: 20px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .step-card { padding: 28px 24px; }
+      .process-pillars { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="brand_assets/J Brothers Transparent Logo.png" alt="J Brothers Digital" class="logo-transparent" />
+        <img src="brand_assets/J Brothers Logo.png" alt="J Brothers Digital" class="logo-solid" />
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="index.html#services">
+            Services
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown">
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Web Development</a>
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><polyline points="8 13 11 10 14 13"/></svg></span>Search Engine Optimization</a>
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M17 3a2.85 2.85 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg></span>Content Marketing</a>
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>Local &amp; GBP SEO</a>
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><rect x="9" y="9" width="6" height="6" rx="1"/><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>AI Search Optimization</a>
+            <a href="index.html#services"><span class="dd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>Technical SEO</a>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="process.html" class="active">Process</a></li>
+        <li><a href="why.html">Why Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-nav">Let's Talk</a>
+      </div>
+      <div class="hamburger" onclick="this.classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ PAGE HERO ═══ -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <img src="brand_assets/hero-pattern.svg" class="page-hero-pattern" alt="" />
+    <div class="page-hero-glow"></div>
+    <div class="page-hero-glow-top"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-hero-badge"><span class="badge-dot"></span>How We Work</div>
+        <h1>
+          A Proven Process.
+          <span class="accent">From Discovery to Results.</span>
+        </h1>
+        <p class="page-hero-desc">
+          Every engagement starts with understanding your goals. From there, we execute a structured plan designed to deliver measurable growth at every phase.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OVERVIEW ═══ -->
+  <section class="process-overview">
+    <div class="container">
+      <div class="process-overview-inner">
+        <div class="process-overview-text">
+          <span class="section-eyebrow">Our Approach</span>
+          <h2>Structure meets <span style="background: linear-gradient(90deg, var(--teal), var(--teal-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">execution.</span></h2>
+          <p>We don't do discovery calls that go nowhere. From the moment we connect, you're inside a process built for clarity, speed, and results. Every step is intentional, every deliverable is measurable.</p>
+          <p>Whether you're an agency partner or a direct client, the process looks the same — because it works.</p>
+          <div class="process-pillars">
+            <div class="process-pillar"><div class="process-pillar-dot"></div><span>Structured Kickoff</span></div>
+            <div class="process-pillar"><div class="process-pillar-dot"></div><span>Clear Milestones</span></div>
+            <div class="process-pillar"><div class="process-pillar-dot"></div><span>Transparent Reporting</span></div>
+            <div class="process-pillar"><div class="process-pillar-dot"></div><span>Continuous Iteration</span></div>
+          </div>
+        </div>
+        <div class="process-overview-visual">
+          <div class="process-visual-card">
+            <div class="process-visual-title">Your engagement roadmap</div>
+            <div class="process-visual-steps">
+              <div class="pv-step">
+                <div class="pv-step-num">01</div>
+                <div class="pv-step-label">Discovery</div>
+                <div class="pv-step-check">✓</div>
+              </div>
+              <div class="pv-step">
+                <div class="pv-step-num">02</div>
+                <div class="pv-step-label">Strategy</div>
+                <div class="pv-step-check">✓</div>
+              </div>
+              <div class="pv-step">
+                <div class="pv-step-num">03</div>
+                <div class="pv-step-label">Execution</div>
+                <div class="pv-step-check">✓</div>
+              </div>
+              <div class="pv-step">
+                <div class="pv-step-num">04</div>
+                <div class="pv-step-label">Optimize</div>
+                <div class="pv-step-check">✓</div>
+              </div>
+              <div class="pv-step">
+                <div class="pv-step-num">05</div>
+                <div class="pv-step-label">Report &amp; Scale</div>
+                <div class="pv-step-check">✓</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DETAILED STEPS ═══ -->
+  <section class="steps-section">
+    <div class="container">
+      <div class="steps-header">
+        <span class="section-eyebrow">The Five Phases</span>
+        <h2 class="section-title">Every step, <span class="accent">explained.</span></h2>
+        <p class="section-desc">No black boxes. Here's exactly what we do at each phase of your engagement and why it matters.</p>
+      </div>
+      <div class="steps-list">
+
+        <div class="step-card">
+          <div class="step-card-num">01</div>
+          <div class="step-card-body">
+            <span class="step-card-tag">Phase One</span>
+            <h3>Discovery</h3>
+            <p>We start by going deep. Before we recommend a single thing, we audit your current digital presence, analyze your competitors, map out your target audience, and understand the business objectives behind your marketing goals. This phase ensures every decision we make is grounded in reality — not assumptions.</p>
+            <div class="step-deliverables">
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Technical SEO audit</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Competitor gap analysis</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Keyword landscape report</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Goals alignment session</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-card-num">02</div>
+          <div class="step-card-body">
+            <span class="step-card-tag">Phase Two</span>
+            <h3>Strategy</h3>
+            <p>Discovery without a plan is just research. We translate what we've learned into a custom roadmap tailored to your business. This includes prioritized action items, clear KPIs, a content plan, technical fixes, and a timeline with milestones. You'll know exactly what we're doing and why.</p>
+            <div class="step-deliverables">
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>90-day roadmap</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>KPI framework</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content calendar</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority action list</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-card-num">03</div>
+          <div class="step-card-body">
+            <span class="step-card-tag">Phase Three</span>
+            <h3>Execution</h3>
+            <p>This is where the work happens. Our team executes on the strategy — building content, fixing technical issues, building authority, optimizing pages, and implementing everything needed to move the needle. We work fast without cutting corners, and you're kept in the loop throughout.</p>
+            <div class="step-deliverables">
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>On-page optimizations</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content production</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Link building</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Technical fixes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-card-num">04</div>
+          <div class="step-card-body">
+            <span class="step-card-tag">Phase Four</span>
+            <h3>Optimize</h3>
+            <p>Execution gets you results. Optimization compounds them. We continuously monitor what's working and what isn't, then refine. A/B testing, content updates, technical improvements, and ranking adjustments are all part of keeping your performance on an upward trajectory.</p>
+            <div class="step-deliverables">
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Rank tracking &amp; analysis</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Conversion optimization</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content refreshes</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Algorithm monitoring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-card-num">05</div>
+          <div class="step-card-body">
+            <span class="step-card-tag">Phase Five</span>
+            <h3>Report &amp; Scale</h3>
+            <p>Every month you receive a clear, branded performance report tied directly to the KPIs we defined together. No vanity metrics. We walk you through what moved, why it moved, and what we're doing next. Then we look at how to scale what's working into the next phase of growth.</p>
+            <div class="step-deliverables">
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Monthly performance report</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Quarterly strategy review</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Growth recommendations</span>
+              <span class="step-deliverable"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Scaling roadmap</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to Start the Process?</h2>
+        <p>Let's kick off with a free discovery audit and show you exactly where the growth opportunities are.</p>
+        <div class="cta-btn-wrap">
+          <a href="contact.html" class="btn btn-primary">
+            Get Started
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+        <div class="cta-trust">
+          <span class="cta-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Free discovery audit</span>
+          <span class="cta-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>No upfront cost</span>
+          <span class="cta-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Cancel anytime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="brand_assets/J Brothers Logo.png" alt="J Brothers Digital" />
+          <p>Engineering digital growth for agencies and businesses through results-driven web development, SEO, and marketing.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Web Development</a></li>
+            <li><a href="index.html#services">SEO Services</a></li>
+            <li><a href="index.html#services">Content Marketing</a></li>
+            <li><a href="index.html#services">Local SEO</a></li>
+            <li><a href="index.html#services">PPC Advertising</a></li>
+            <li><a href="index.html#services">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="process.html">Our Process</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:dodo@jbrothersdigital.com">dodo@jbrothersdigital.com</a></li>
+            <li><a href="tel:+639817099529">+63 981 709 9529</a></li>
+            <li><a href="#">Book a Call</a></li>
+            <li><a href="#">Partner Program</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 J Brothers Digital. All rights reserved. <em>Engineering Digital Growth.</em></p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.querySelector('.nav');
+    const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 40); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
