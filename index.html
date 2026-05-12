@@ -936,44 +936,79 @@
 
     /* ── CTA ── */
     .cta {
-      padding: 100px 0;
-      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--dark) 40%, var(--teal-dark) 100%);
+      padding: 120px 0;
+      background:
+        radial-gradient(ellipse 60% 70% at 15% 80%, rgba(18,58,87,.6) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 60% at 85% 20%, rgba(27,175,146,.08) 0%, transparent 55%),
+        linear-gradient(160deg, #0a1520 0%, #0d1e2d 50%, #0f2233 100%);
       position: relative;
       overflow: hidden;
     }
     .cta::before {
       content: '';
       position: absolute;
-      width: 600px;
-      height: 600px;
+      width: 700px;
+      height: 700px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(27,175,146,.15) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(27,175,146,.09) 0%, transparent 65%);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      pointer-events: none;
     }
     .cta-inner {
       position: relative;
       z-index: 1;
       text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
     }
     .cta h2 {
       font-family: var(--font-display);
-      font-size: clamp(30px, 4vw, 48px);
+      font-size: clamp(32px, 4.5vw, 52px);
       font-weight: 800;
       color: var(--white);
-      line-height: 1.15;
+      line-height: 1.13;
       margin-bottom: 20px;
+      letter-spacing: -.5px;
     }
     .cta p {
-      font-size: 18px;
-      color: rgba(255,255,255,.7);
-      max-width: 520px;
+      font-size: 17px;
+      color: rgba(255,255,255,.55);
+      max-width: 480px;
       margin: 0 auto 40px;
-      line-height: 1.7;
+      line-height: 1.75;
     }
-    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-    .cta-actions .btn { font-size: 16px; padding: 14px 36px; }
+    .cta-btn-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+    .cta-btn-wrap .btn {
+      font-size: 16px;
+      padding: 15px 40px;
+      box-shadow: 0 8px 28px rgba(27,175,146,.3);
+    }
+    .cta-trust {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: rgba(255,255,255,.45);
+      font-weight: 500;
+    }
+    .cta-trust-item svg {
+      color: var(--teal);
+      flex-shrink: 0;
+    }
 
     /* ── FOOTER ── */
     footer {
@@ -1509,15 +1544,27 @@
   <section class="cta" id="contact">
     <div class="container">
       <div class="cta-inner">
-        <span class="section-eyebrow" style="color:rgba(255,255,255,.6);">Ready to Grow?</span>
-        <h2>Ready to Scale Your<br/>Digital Presence?</h2>
-        <p>Let's talk about what J Brothers Digital can do for your business. Book a free 30-minute strategy call. No pressure, no hard sell.</p>
-        <div class="cta-actions">
-          <a href="mailto:info@jbrothersdigital.com" class="btn btn-primary">
-            Book a Free Strategy Call
+        <h2>Ready to Scale Your<br/>SEO Offering?</h2>
+        <p>Sign up, get a free discovery audit, and see how we work with our partners. No commitment, no pressure.</p>
+        <div class="cta-btn-wrap">
+          <a href="mailto:james@seobrothers.co" class="btn btn-primary">
+            Get Started
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#services" class="btn btn-outline">View Our Services</a>
+          <div class="cta-trust">
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              No upfront cost
+            </span>
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Cancel anytime
+            </span>
+            <span class="cta-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Free discovery audit
+            </span>
+          </div>
         </div>
       </div>
     </div>
