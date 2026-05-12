@@ -400,6 +400,16 @@
       flex-wrap: wrap;
     }
     .hero-actions .btn { font-size: 16px; padding: 14px 32px; }
+    .hero-glow-top {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(18,120,200,.18) 0%, rgba(27,175,146,.08) 45%, transparent 70%);
+      top: -120px;
+      left: -80px;
+      pointer-events: none;
+    }
 
     /* ── STATS ── */
     .stats {
@@ -1187,6 +1197,7 @@
       <img src="brand_assets/hero-pattern.svg" class="hero-pattern" alt="" />
     </div>
     <div class="hero-glow"></div>
+    <div class="hero-glow-top"></div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge"><span class="badge-dot"></span>Top Rated SEO Company</div>
