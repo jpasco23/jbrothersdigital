@@ -305,15 +305,15 @@
         linear-gradient(150deg, #071828 0%, #0d2337 45%, #123A57 100%);
     }
     /* marketing pattern overlay */
-    .hero-bg::after {
-      content: '';
+    .hero-pattern {
       position: absolute;
       inset: 0;
-      background-image: url('brand_assets/hero-pattern.svg');
-      background-size: cover;
-      background-position: center top;
-      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
       opacity: .75;
+      pointer-events: none;
     }
     .hero-glow {
       position: absolute;
@@ -1172,7 +1172,9 @@
 
   <!-- ═══ HERO ═══ -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <img src="brand_assets/hero-pattern.svg" class="hero-pattern" alt="" />
+    </div>
     <div class="hero-glow"></div>
     <div class="container">
       <div class="hero-content">

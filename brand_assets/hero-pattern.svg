@@ -34,13 +34,13 @@
   <symbol id="i4" viewBox="0 0 44 44">
     <circle cx="22" cy="22" r="13" fill="none" stroke="white" stroke-width="1.3"/>
     <circle cx="22" cy="22" r="5"  fill="none" stroke="white" stroke-width="1.3"/>
-    <line x1="22" y1="9"    x2="22"   y2="3"    stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="22"   y1="9"    x2="22"   y2="3"    stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <line x1="31.2" y1="12.8" x2="35.2" y2="8.8"  stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="35"  y1="22"   x2="41"   y2="22"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="35"   y1="22"   x2="41"   y2="22"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <line x1="31.2" y1="31.2" x2="35.2" y2="35.2" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="22"  y1="35"   x2="22"   y2="41"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="22"   y1="35"   x2="22"   y2="41"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <line x1="12.8" y1="31.2" x2="8.8"  y2="35.2" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-    <line x1="9"   y1="22"   x2="3"    y2="22"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="9"    y1="22"   x2="3"    y2="22"   stroke="white" stroke-width="2.2" stroke-linecap="round"/>
     <line x1="12.8" y1="12.8" x2="8.8"  y2="8.8"  stroke="white" stroke-width="2.2" stroke-linecap="round"/>
   </symbol>
 
@@ -81,7 +81,7 @@
   <!-- DOCUMENT / REPORT -->
   <symbol id="i9" viewBox="0 0 44 44">
     <path d="M6,2 L30,2 L38,10 L38,42 L6,42 Z" fill="none" stroke="white" stroke-width="1.3" stroke-linejoin="round"/>
-    <path d="M30,2 L30,10 L38,10"              fill="none" stroke="white" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M30,2 L30,10 L38,10"               fill="none" stroke="white" stroke-width="1.3" stroke-linejoin="round"/>
     <line x1="11" y1="18" x2="33" y2="18" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
     <line x1="11" y1="24" x2="33" y2="24" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
     <line x1="11" y1="30" x2="26" y2="30" stroke="white" stroke-width="1.3" stroke-linecap="round"/>
@@ -91,8 +91,8 @@
   <!-- MOBILE / PHONE -->
   <symbol id="i10" viewBox="0 0 44 44">
     <rect x="10" y="2" width="24" height="40" rx="4" fill="none" stroke="white" stroke-width="1.3"/>
-    <line x1="10" y1="34" x2="34" y2="34"    stroke="white" stroke-width="1.3"/>
-    <circle cx="22" cy="38" r="2"              fill="none" stroke="white" stroke-width="1.3"/>
+    <line x1="10" y1="34" x2="34" y2="34" stroke="white" stroke-width="1.3"/>
+    <circle cx="22" cy="38" r="2" fill="none" stroke="white" stroke-width="1.3"/>
     <rect x="17" y="6" width="10" height="2" rx="1" fill="none" stroke="white" stroke-width="1.3"/>
   </symbol>
 
@@ -104,108 +104,108 @@
 
 </defs>
 
-<!-- ═══ ROW 1  y=22 ═══ -->
-<use href="#i0"  x="55"   y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 77 44"   to="360 77 44"   dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="185"  y="26"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 207 48"  to="-360 207 48"  dur="15s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i2"  x="315"  y="20"  width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 337 42"  to="360 337 42"   dur="25s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="445"  y="24"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 467 46"  to="-360 467 46"  dur="18s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="575"  y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 597 44"  to="360 597 44"   dur="30s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i5"  x="705"  y="26"  width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 727 48"  to="-360 727 48"  dur="12s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i6"  x="835"  y="20"  width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 857 42"  to="360 857 42"   dur="20s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="965"  y="24"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 987 46"  to="-360 987 46"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="1095" y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1117 44" to="360 1117 44"  dur="25s" begin="-11s" repeatCount="indefinite"/></use>
-<use href="#i9"  x="1225" y="26"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1247 48" to="-360 1247 48" dur="18s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i10" x="1355" y="20"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1377 42" to="360 1377 42"  dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 1 ═══ -->
+<use href="#i0"  x="55"   y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="185"  y="26"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i2"  x="315"  y="20"  width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="445"  y="24"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="575"  y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i5"  x="705"  y="26"  width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i6"  x="835"  y="20"  width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="965"  y="24"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="1095" y="22"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-11s" repeatCount="indefinite"/></use>
+<use href="#i9"  x="1225" y="26"  width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i10" x="1355" y="20"  width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 2  y=135 ═══ -->
-<use href="#i11" x="115"  y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 137 157" to="-360 137 157" dur="12s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="245"  y="131" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 267 153" to="360 267 153"  dur="20s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i9"  x="375"  y="137" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 397 159" to="-360 397 159" dur="15s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i6"  x="505"  y="133" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 527 155" to="360 527 155"  dur="25s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="635"  y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 657 157" to="-360 657 157" dur="18s" begin="-11s" repeatCount="indefinite"/></use>
-<use href="#i2"  x="765"  y="131" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 787 153" to="360 787 153"  dur="30s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i10" x="895"  y="137" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 917 159" to="-360 917 159" dur="12s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="1025" y="133" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 1047 155" to="360 1047 155" dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="1155" y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1177 157" to="-360 1177 157" dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i5"  x="1285" y="131" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1307 153" to="360 1307 153" dur="25s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="1395" y="137" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1417 159" to="-360 1417 159" dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 2 ═══ -->
+<use href="#i11" x="115"  y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="245"  y="131" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i9"  x="375"  y="137" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i6"  x="505"  y="133" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="635"  y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-11s" repeatCount="indefinite"/></use>
+<use href="#i2"  x="765"  y="131" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i10" x="895"  y="137" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="1025" y="133" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="1155" y="135" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i5"  x="1285" y="131" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="1395" y="137" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 3  y=248 ═══ -->
-<use href="#i5"  x="55"   y="248" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 77 270"   to="360 77 270"   dur="30s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="185"  y="252" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 207 274"  to="-360 207 274"  dur="12s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i11" x="315"  y="246" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 337 268"  to="360 337 268"   dur="20s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="445"  y="250" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 467 272"  to="-360 467 272"  dur="15s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i9"  x="575"  y="248" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 597 270"  to="360 597 270"   dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="705"  y="244" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 727 266"  to="-360 727 266"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="835"  y="250" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 857 272"  to="360 857 272"   dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i2"  x="965"  y="246" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 987 268"  to="-360 987 268"  dur="12s" begin="-11s" repeatCount="indefinite"/></use>
-<use href="#i6"  x="1095" y="252" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1117 274" to="360 1117 274"  dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="1225" y="248" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1247 270" to="-360 1247 270" dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i10" x="1355" y="244" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 1377 266" to="360 1377 266"  dur="25s" begin="-2s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 3 ═══ -->
+<use href="#i5"  x="55"   y="248" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="185"  y="252" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i11" x="315"  y="246" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="445"  y="250" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i9"  x="575"  y="248" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="705"  y="244" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="835"  y="250" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i2"  x="965"  y="246" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-11s" repeatCount="indefinite"/></use>
+<use href="#i6"  x="1095" y="252" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="1225" y="248" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i10" x="1355" y="244" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-2s"  repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 4  y=361 ═══ -->
-<use href="#i9"  x="115"  y="361" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 137 383"  to="-360 137 383"  dur="18s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="245"  y="365" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 267 387"  to="360 267 387"   dur="30s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="375"  y="359" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 397 381"  to="-360 397 381"  dur="12s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="505"  y="363" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 527 385"  to="360 527 385"   dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="635"  y="361" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 657 383"  to="-360 657 383"  dur="15s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i11" x="765"  y="357" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 787 379"  to="360 787 379"   dur="25s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i5"  x="895"  y="363" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 917 385"  to="-360 917 385"  dur="18s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="1025" y="359" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1047 381" to="360 1047 381"  dur="30s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i2"  x="1155" y="365" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1177 387" to="-360 1177 387" dur="12s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i10" x="1285" y="361" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1307 383" to="360 1307 383"  dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i6"  x="1395" y="357" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1417 379" to="-360 1417 379" dur="15s" begin="-11s" repeatCount="indefinite"/></use>
+<!-- ═══ ROW 4 ═══ -->
+<use href="#i9"  x="115"  y="361" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="245"  y="365" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="375"  y="359" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="505"  y="363" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="635"  y="361" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i11" x="765"  y="357" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i5"  x="895"  y="363" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="1025" y="359" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i2"  x="1155" y="365" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i10" x="1285" y="361" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i6"  x="1395" y="357" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-11s" repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 5  y=474 ═══ -->
-<use href="#i2"  x="55"   y="474" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 77 496"   to="360 77 496"   dur="25s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i6"  x="185"  y="478" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 207 500"  to="-360 207 500"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="315"  y="472" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 337 494"  to="360 337 494"   dur="30s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i5"  x="445"  y="476" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 467 498"  to="-360 467 498"  dur="12s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="575"  y="474" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 597 496"  to="360 597 496"   dur="20s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i1"  x="705"  y="470" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 727 492"  to="-360 727 492"  dur="15s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i9"  x="835"  y="476" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 857 498"  to="360 857 498"   dur="25s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="965"  y="472" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 987 494"  to="-360 987 494"  dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i11" x="1095" y="478" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1117 500" to="360 1117 500"  dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="1225" y="474" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1247 496" to="-360 1247 496" dur="12s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="1355" y="470" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1377 492" to="360 1377 492"  dur="20s" begin="-11s" repeatCount="indefinite"/></use>
+<!-- ═══ ROW 5 ═══ -->
+<use href="#i2"  x="55"   y="474" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i6"  x="185"  y="478" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="315"  y="472" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i5"  x="445"  y="476" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="575"  y="474" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i1"  x="705"  y="470" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i9"  x="835"  y="476" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="965"  y="472" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i11" x="1095" y="478" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="1225" y="474" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="1355" y="470" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-11s" repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 6  y=587 ═══ -->
-<use href="#i10" x="115"  y="587" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 137 609"  to="-360 137 609"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="245"  y="591" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 267 613"  to="360 267 613"   dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="375"  y="585" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 397 607"  to="-360 397 607"  dur="18s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i2"  x="505"  y="589" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 527 611"  to="360 527 611"   dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i11" x="635"  y="587" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 657 609"  to="-360 657 609"  dur="12s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i9"  x="765"  y="583" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 787 605"  to="360 787 605"   dur="20s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="895"  y="589" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 917 611"  to="-360 917 611"  dur="15s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i6"  x="1025" y="585" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1047 607" to="360 1047 607"  dur="25s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="1155" y="591" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1177 613" to="-360 1177 613" dur="18s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i5"  x="1285" y="587" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1307 609" to="360 1307 609"  dur="30s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="1395" y="583" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1417 605" to="-360 1417 605" dur="12s" begin="-1s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 6 ═══ -->
+<use href="#i10" x="115"  y="587" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="245"  y="591" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="375"  y="585" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i2"  x="505"  y="589" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i11" x="635"  y="587" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i9"  x="765"  y="583" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="895"  y="589" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i6"  x="1025" y="585" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="1155" y="591" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i5"  x="1285" y="587" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="1395" y="583" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-1s"  repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 7  y=700 ═══ -->
-<use href="#i7"  x="55"   y="700" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 77 722"   to="360 77 722"   dur="20s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i11" x="185"  y="704" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 207 726"  to="-360 207 726"  dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="315"  y="698" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 337 720"  to="360 337 720"   dur="25s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="445"  y="702" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 467 724"  to="-360 467 724"  dur="18s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i2"  x="575"  y="700" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 597 722"  to="360 597 722"   dur="30s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i3"  x="705"  y="696" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 727 718"  to="-360 727 718"  dur="12s" begin="-11s" repeatCount="indefinite"/></use>
-<use href="#i5"  x="835"  y="702" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 857 724"  to="360 857 724"   dur="20s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="965"  y="698" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 987 720"  to="-360 987 720"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="1095" y="704" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1117 726" to="360 1117 726"  dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i9"  x="1225" y="700" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1247 722" to="-360 1247 722" dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
-<use href="#i10" x="1355" y="696" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1377 718" to="360 1377 718"  dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 7 ═══ -->
+<use href="#i7"  x="55"   y="700" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i11" x="185"  y="704" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="315"  y="698" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="445"  y="702" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i2"  x="575"  y="700" width="44" height="44" opacity="0.20"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i3"  x="705"  y="696" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-11s" repeatCount="indefinite"/></use>
+<use href="#i5"  x="835"  y="702" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="965"  y="698" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="1095" y="704" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i9"  x="1225" y="700" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
+<use href="#i10" x="1355" y="696" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-4s"  repeatCount="indefinite"/></use>
 
-<!-- ═══ ROW 8  y=813 ═══ -->
-<use href="#i3"  x="115"  y="813" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 137 835"  to="-360 137 835"  dur="12s" begin="-5s"  repeatCount="indefinite"/></use>
-<use href="#i5"  x="245"  y="817" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 267 839"  to="360 267 839"   dur="20s" begin="-10s" repeatCount="indefinite"/></use>
-<use href="#i9"  x="375"  y="811" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 397 833"  to="-360 397 833"  dur="15s" begin="-3s"  repeatCount="indefinite"/></use>
-<use href="#i7"  x="505"  y="815" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 527 837"  to="360 527 837"   dur="25s" begin="-7s"  repeatCount="indefinite"/></use>
-<use href="#i1"  x="635"  y="813" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 657 835"  to="-360 657 835"  dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
-<use href="#i4"  x="765"  y="809" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 787 831"  to="360 787 831"   dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
-<use href="#i0"  x="895"  y="815" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 917 837"  to="-360 917 837"  dur="12s" begin="-6s"  repeatCount="indefinite"/></use>
-<use href="#i6"  x="1025" y="811" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 1047 833" to="360 1047 833"  dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
-<use href="#i11" x="1155" y="817" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1177 839" to="-360 1177 839" dur="15s" begin="-11s" repeatCount="indefinite"/></use>
-<use href="#i2"  x="1285" y="813" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 1307 835" to="360 1307 835"  dur="25s" begin="-4s"  repeatCount="indefinite"/></use>
-<use href="#i8"  x="1395" y="809" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 1417 831" to="-360 1417 831" dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
+<!-- ═══ ROW 8 ═══ -->
+<use href="#i3"  x="115"  y="813" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-5s"  repeatCount="indefinite"/></use>
+<use href="#i5"  x="245"  y="817" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-10s" repeatCount="indefinite"/></use>
+<use href="#i9"  x="375"  y="811" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-3s"  repeatCount="indefinite"/></use>
+<use href="#i7"  x="505"  y="815" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-7s"  repeatCount="indefinite"/></use>
+<use href="#i1"  x="635"  y="813" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-2s"  repeatCount="indefinite"/></use>
+<use href="#i4"  x="765"  y="809" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="30s" begin="-9s"  repeatCount="indefinite"/></use>
+<use href="#i0"  x="895"  y="815" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="12s" begin="-6s"  repeatCount="indefinite"/></use>
+<use href="#i6"  x="1025" y="811" width="44" height="44" opacity="0.18"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="20s" begin="-1s"  repeatCount="indefinite"/></use>
+<use href="#i11" x="1155" y="817" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="15s" begin="-11s" repeatCount="indefinite"/></use>
+<use href="#i2"  x="1285" y="813" width="44" height="44" opacity="0.19"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="360 22 22"   dur="25s" begin="-4s"  repeatCount="indefinite"/></use>
+<use href="#i8"  x="1395" y="809" width="44" height="44" opacity="0.17"><animateTransform attributeName="transform" type="rotate" from="0 22 22" to="-360 22 22"  dur="18s" begin="-8s"  repeatCount="indefinite"/></use>
 
 </svg>
