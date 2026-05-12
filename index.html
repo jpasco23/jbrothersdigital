@@ -346,17 +346,19 @@
       letter-spacing: .5px;
       margin-bottom: 28px;
     }
-    .hero-badge::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--teal);
-      animation: pulse 2s infinite;
+    .hero-badge-icon {
+      color: var(--white);
+      flex-shrink: 0;
+      animation: spin-random 3s ease-in-out infinite;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: .5; transform: scale(1.4); }
+    @keyframes spin-random {
+      0%   { transform: rotate(0deg); }
+      15%  { transform: rotate(90deg); }
+      30%  { transform: rotate(85deg); }
+      50%  { transform: rotate(200deg); }
+      65%  { transform: rotate(195deg); }
+      80%  { transform: rotate(310deg); }
+      100% { transform: rotate(360deg); }
     }
     .hero h1 {
       font-family: var(--font-display);
@@ -1174,7 +1176,10 @@
     <div class="hero-glow"></div>
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">Top Rated SEO Company</div>
+        <div class="hero-badge">
+          <svg class="hero-badge-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          Top Rated SEO Company
+        </div>
         <h1>
           J Brothers Digital: The Agency
           <span class="accent">Built to Engineer Your Growth.</span>
