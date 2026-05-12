@@ -405,11 +405,14 @@
       font-family: var(--font-display);
       font-size: 44px;
       font-weight: 800;
-      color: var(--navy);
       line-height: 1;
       margin-bottom: 6px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
-    .stat-number span { color: var(--teal); }
+    .stat-number span { -webkit-text-fill-color: transparent; }
     .stat-label {
       font-size: 14px;
       color: var(--text-secondary);
